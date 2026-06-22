@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const seedAdmin = async () => {
     try {
-        await mongoose.connect("mongodb+srv://admin:xRLfibGWd5Jzy0im@cluster0.ucmx19s.mongodb.net/student_living");
+        await mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://admin:xRLfibGWd5Jzy0im@cluster0.ucmx19s.mongodb.net/Laundry_Management");
 
         console.log('Connected to MongoDB...');
 
